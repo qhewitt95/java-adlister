@@ -6,13 +6,16 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<% request.setAttribute("welcomeMessage", "Welcome, " + request.getParameter("name")); %>
 <html>
 <head>
     <title>Landing</title>
 </head>
+<h2> This is the smart use of Expressive Language Message -> ${message}</h2>
 <body>
-<%@include file="partials"%>
-<h1> Welcome to the Landing Page </h1>
+<%@include file="partials/navbar.jsp"%>
+
+<h1>${message}</h1>
 
 </body>
 </html>
