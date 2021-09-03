@@ -1,0 +1,1 @@
+<%@include file="partials/navBars.jsp"%>
